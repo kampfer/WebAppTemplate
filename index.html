@@ -1,1 +1,32 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>web app</title>
+    <script type="text/javascript">
+        var require = {
+            baseUrl : "./",
+            paths : {
+                jquery : "js/lib/jquery",
+                underscore : "js/lib/underscore",
+                backbone : "js/lib/backbone"
+            },
+            shim : {
+                backbone: {
+                    deps: ["underscore", "jquery"],
+                    exports: "Backbone"
+                },
+                underscore: {
+                    exports: "_"
+                }
+            }
+        };
+    </script>
+    <script type="text/javascript" src="js/lib/require.js" data-main="js/app.js"></script>
+</head>
+<body>
+    <div id="header">header</div>
+    <div id="wrapper">wrapper</div>
+    <div id="footer">footer</div>
+</body>
+</html>
