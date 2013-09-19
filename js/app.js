@@ -1,5 +1,5 @@
-define(["backbone", "underscore", "jquery"], function(backbone, _, $) {
-    console.log(backbone);
+define(["underscore", "jquery", "backbone"], function(_, $, backbone) {
     console.log(_);
     console.log($);
+    console.log(backbone);
 });
